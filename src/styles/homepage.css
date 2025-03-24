@@ -1,0 +1,42 @@
+.homepage-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.home-container {
+  background-color: rgba(225, 225, 225, 1);
+}
+
+.img-poster-1 {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .homepage-home {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-poster-1 {
+    max-height: 70vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homepage-home {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .img-poster-1 {
+    max-height: 50vh;
+  }
+}

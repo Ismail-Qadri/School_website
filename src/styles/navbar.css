@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Top Navbar Styles === */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(1, 14, 38, 0.85);
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+/* Center Section */
+.center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.school-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bulletins {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+/* Right Side Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 2px solid white;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.online-fee-sec,
+.care-login {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.online-fee-sec img,
+.care-login img {
+  width: 30px;
+  height: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* === Bottom Navbar Styles === */
+.bottom-navbar {
+  background: linear-gradient(to right, #C41A1A, #FF0F03);
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.bottom-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.bottom-navbar ul li {
+  display: inline-block;
+}
+
+.bottom-navbar ul li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom-navbar ul li button:hover {
+  color: #ffcc00;
+}
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .top-navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .bulletins {
+    flex-direction: column;
+  }
+
+  .links {
+    align-items: center;
+    text-align: center;
+    border: none;
+    margin-right: 0;
+  }
+
+  .bottom-navbar ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .bottom-navbar ul li button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+}

@@ -1,0 +1,54 @@
+.container-contact {
+    background-color: rgba(1, 14, 38, 0.85);
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 20px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   gap: 30px;
+  flex-direction: column;
+}
+.about-para-one{
+    font-weight: 300;
+}
+.about-para{
+    font-weight: 300;
+    border: 2px solid white;
+    /* color: black; */
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(202, 203, 205, 0.25);
+}
+
+.contact-one h1,
+.contact-two h1 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.contact-three{
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-contact {
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .contact-one,
+  .contact-two,
+  .contact-three {
+      width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-one,
+  .contact-two,
+  .contact-three {
+      width: 100%;
+  }
+}

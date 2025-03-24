@@ -1,0 +1,141 @@
+/* Parent Container */
+.infra-facilities-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+    border-radius: 10px;
+    overflow: hidden;
+    height: auto;
+  }
+  
+  /* Left Section - Our Infrastructure */
+  .infrastructure-section {
+    width: 40%;
+    padding: 30px;
+    color: white;
+    background: rgba(234, 19, 19, 0.5); /* Red with transparency */
+    background-image: url("../assets/school-bg.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 10px 0 0 10px;
+    
+  }
+  .infra-content{
+    width: 90%;
+text-align: left;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: 30px;
+  }
+  .head-color-infra{
+    color: rgba(255, 246, 2, 1)
+  }
+  .section-title-i {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sec-head-infra{
+    margin-bottom: 50px;
+    /* margin-left: 30px; */
+    text-align: center;
+    font-size: 20px ;
+  }
+  .infra-description {
+    width: 90%;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 70px;
+    
+  }
+  
+  .infra-list {
+    list-style-type: disc;
+    /* padding-left: 20px; */
+    font-size: 1.1rem;
+    line-height: 2;
+    width: 90%;
+  }
+  .infra-list p img{
+    margin-right: 10px;
+  } 
+  
+  /* Right Section - Our Facilities */
+  .facilities-section {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 0 10px 10px 0;
+    padding-left: 40px;
+  }
+  .section-title-f {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .facility-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+  
+  .facility-image img {
+    width: 9vw;
+    height: 9vh;
+    padding: 2px;
+    border-radius: 8px;
+  }
+  
+  .facility-content {
+    flex: 1;
+    
+  }
+  
+  .facility-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .facility-description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    width: 90%;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .infra-facilities-container {
+      flex-direction: column;
+    }
+  
+    .infrastructure-section,
+    .facilities-section {
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+    }
+  
+    .facility-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .facility-image img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

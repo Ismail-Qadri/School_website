@@ -1,0 +1,140 @@
+/* Common Container for Messages */
+.msg-component{
+  background-color: rgba(225,225,225,1);
+  padding: 20px;
+}
+.msg-container-all {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+
+/* Principal's Message */
+.message-container-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.principal-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.message-content-p {
+  width: 75%;
+  padding-left: 10px;
+}
+
+.message-heading-p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.red-text {
+  color: red;
+}
+
+.message-text-p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.read-more-btn-p {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Manager's Message */
+.message-container-m {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: row-reverse; /* Image on the right */
+}
+
+.manager-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.message-content-m {
+  width: 75%;
+  padding-left: 10px;
+}
+
+.message-heading-m {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.message-text-m {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.read-more-btn-m {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .message-container-p,
+  .message-container-m {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .principal-image img,
+  .manager-image img {
+    width: 180px;
+    margin-bottom: 15px;
+  }
+
+  .message-content-p,
+  .message-content-m {
+    width: 95%;
+  }
+
+  .message-heading-p,
+  .message-heading-m {
+    text-align: center;
+  }
+
+  .message-text-p,
+  .message-text-m {
+    text-align: center;
+  }
+}
