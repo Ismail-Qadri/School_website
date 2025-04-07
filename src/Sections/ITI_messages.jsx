@@ -17,7 +17,6 @@ const ITI_messages = () => {
             {/* Right Side: Message Content */}
             <div className="message-content-p">
               <h2 className="message-heading-p">
-                {" "}
                 FOUNDER’S <span className="red-text">MESSAGE</span>
               </h2>
               <p className="message-text-p">
@@ -38,7 +37,7 @@ const ITI_messages = () => {
                 not able to move forward. To solve these problems, this
                 institute has been established so that there is no lack of any
                 kind of resources in making the future of the students and they
-                can make their future. President (Rajdev Yadav)
+                can make their future. <br></br><b>President (Rajdev Yadav)</b>
               </p>
             </div>
           </div>
@@ -70,7 +69,7 @@ const ITI_messages = () => {
                   regarding their children: what kind of education should they
                   give their children so that they can become self-reliant and
                   their children's development can progress continuously.
-                  Manager (Mrs. Kanti Devi)
+                  <br /><b>Manager (Mrs. Kanti Devi)</b>
                 </p>
                 {/* <button className="read-more-btn-m">Read More</button> */}
               </div>

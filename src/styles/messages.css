@@ -44,6 +44,7 @@
 
 .red-text {
   color: red;
+  margin-left: 8px;
 }
 
 .message-text-p {
@@ -111,6 +112,9 @@
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  .msg-container-all {
+    width: 90%;
+  }
   .message-container-p,
   .message-container-m {
     flex-direction: column;
