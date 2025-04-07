@@ -96,7 +96,7 @@
 .message-text-m {
   font-size: 1rem;
   line-height: 1.5;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .read-more-btn-m {
@@ -125,12 +125,15 @@
 
   .message-content-p,
   .message-content-m {
-    width: 95%;
+    width: 99%;
   }
 
   .message-heading-p,
   .message-heading-m {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .message-text-p,

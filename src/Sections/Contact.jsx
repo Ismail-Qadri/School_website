@@ -11,8 +11,8 @@ function Contact() {
     
       // Coordinates for HCL Noida
       const hclNoidaLocation = {
-        lat: 28.5385,
-        lng: 77.3366,
+        lat: 26.7583,
+        lng: 83.1850,
       };
 
   return (
@@ -35,7 +35,7 @@ function Contact() {
           <GoogleMap
             mapContainerStyle={mapContainerStyle}
             center={hclNoidaLocation}
-            zoom={15}
+            zoom={20}
           >
             <Marker position={hclNoidaLocation} />
           </GoogleMap>

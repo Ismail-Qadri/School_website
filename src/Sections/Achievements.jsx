@@ -1,36 +1,41 @@
 import React, { useState } from "react";
 import "../styles/achievements.css";
-// import tenthResultImg from "../assets/tenth-result.jpg";
-// import twelfthResultImg from "../assets/twelfth-result.jpg";
-// import graduationImg from "../assets/graduation.jpg";
-// import sportsImg from "../assets/sports.jpg";
-// import extracurricularImg from "../assets/extracurricular.jpg";
+import tenthResultImg from "../assets/10result.png";
+import twelfthResultImg from "../assets/12result.png";
+import graduationImg from "../assets/home-poster-1.jpg";
+import sportsImg from "../assets/home-poster-1.jpg"
+import extracurricularImg from "../assets/achievement1.png";
+import extracurricularImg2 from '../assets/achievement2.png';
+import graduation_result from "../assets/Graduation_Result.pdf";
 
 const achievementsData = [
   { 
     title: "10th Result", 
-    content: "Our students achieved a 98% pass percentage with top ranks.", 
+    // content: "Our students achieved a 98% pass percentage with top ranks.", 
     image: tenthResultImg 
   },
   { 
     title: "12th Result", 
-    content: "An outstanding 95% success rate, with many students scoring above 90%.", 
+    // content: "An outstanding 95% success rate, with many students scoring above 90%.", 
     image: twelfthResultImg 
   },
   { 
     title: "Graduation Result", 
-    content: "Alumni excel in top universities with a strong academic foundation.", 
-    image: graduationImg 
+    // content: "Alumni excel in top universities with a strong academic foundation.", 
+    // image: graduationImg 
+    showDownload: true
   },
   { 
     title: "Sports Achievements", 
-    content: "Our students won state-level championships in football and athletics.", 
+    // content: "Our students won state-level championships in football and athletics.", 
     image: sportsImg 
   },
   { 
     title: "Extra-Curricular Achievements", 
-    content: "Debate, music, and arts competitions were won at district and state levels.", 
-    image: extracurricularImg 
+    // content: "Debate, music, and arts competitions were won at district and state levels.", 
+    image: extracurricularImg,
+    extraImage: extracurricularImg2
+    
   }
 ];
 
@@ -51,12 +56,40 @@ const Achievements = () => {
               <h3>{item.title}</h3>
               <span>{activeIndex === index ? "▲" : "▼"}</span>
             </div>
-            {activeIndex === index && (
+            {/* {activeIndex === index && (
               <div className="accordion-content">
                 <p>{item.content}</p>
                 <img src={item.image} alt={item.title} className="achievement-image" />
               </div>
-            )}
+            )} */}
+            {activeIndex === index && (
+  <div className="accordion-content">
+    {item.content && <p>{item.content}</p>}
+    
+    {item.image && (
+      <img src={item.image} alt={item.title} className="achievement-image" />
+    )}
+    
+    {item.extraImage && (
+      <img
+        src={item.extraImage}
+        alt={`${item.title} Extra`}
+        className="achievement-image"
+      />
+    )}
+
+    {item.showDownload && (
+      <a
+        href={graduation_result}
+        download="Graduation Result.pdf"
+        className="download-button"
+      >
+        Download Graduation Result
+      </a>
+    )}
+  </div>
+)}
+
           </div>
         ))}
       </div>
