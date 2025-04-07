@@ -4,6 +4,7 @@ import logo from "../assets/RRT-LOGO.svg";
 // import fee_icon from "../assets/online-fee-icon.png";
 // import campus_care_login from "../assets/campus-care-login-icon.png";
 import { Link } from "react-router-dom";
+import fee_structuret from "../assets/Fee-Structure-RRT-Inter-College.pdf"
 
 const Navbar = () => {
 
@@ -15,10 +16,10 @@ const Navbar = () => {
   }
 
   const downloadPDF = () => {
-    const pdfPath ="/public/Fee-Structure-RRT-Inter-College.pdf";
+    const pdfPath ="../assets/Fee-Structure-RRT-Inter-College.pdf";
     const link = document.createElement("a");
     link.href = pdfPath;
-    link.download = "Fee_Structure-Inter-College.pdf";
+    link.download = "Fee_Structure.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -64,7 +65,17 @@ const Navbar = () => {
           <li><button onClick={() => scrollToSection("gallery")}>Gallery</button></li>
           <li><button onClick={() => scrollToSection("achievements")}>Achievements</button></li>
           {/* <li><button onClick={() => scrollToSection("admission")}>Fee Structure</button></li> */}
-          <li><button onClick={downloadPDF}>Fee Structure</button></li>
+          <li>
+            <button 
+            // onClick={downloadPDF}
+            >
+            <a
+                  href={fee_structuret}
+                  download="Fee Structure.pdf"
+                  className="fee-link"
+                >Fee Structure</a>
+                </button>
+                </li>
           <li><button onClick={() => scrollToSection("facility")}>Facilities</button></li>
           <li><button onClick={() => scrollToSection("contact")}>Contact Us</button></li>
         </ul>

@@ -22,7 +22,6 @@ the villages as well cities. </p>
 <ul className='about-ul'>
  <b><i>Aim of the School</i></b>
  <li>Personal growth: intellectual, moral, physical, psychological and social</li>
- <li>Personal growth: intellectual, moral, physical, psychological and social</li>
  
  <li>Progressive and holistic development of the child - fully human, wholly 
 Indian, truly modern</li>
