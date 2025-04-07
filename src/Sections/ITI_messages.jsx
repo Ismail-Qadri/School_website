@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/messages.css";
-import principal_img from "../assets/principal-img.jpg";
-import manager_img from "../assets/manager-msg.png";
+import principal_img from "../assets/director_pic.jpeg";
+import manager_img from "../assets/ITI-directer-pic.jpeg";
 
 const ITI_messages = () => {
   return (

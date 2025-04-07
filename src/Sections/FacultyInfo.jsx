@@ -7,6 +7,7 @@ import facultyPDF from '../assets/faculties-list.pdf'; // adjust the path based 
 
 const FacultyInfo = () => {
   return (
+    <section id="faculties">
     <div className="faculty-container">
       <h2 className="faculty-heading">Our Esteemed Faculty</h2>
 
@@ -23,6 +24,7 @@ const FacultyInfo = () => {
         📄 Download Full Faculty PDF
       </a>
     </div>
+    </section>
   );
 };
 

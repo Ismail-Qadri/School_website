@@ -40,8 +40,8 @@
   }
   .achievement-image {
     width: 100%;
-    max-width: 800px; /* Increased from 400px to 600px */
-    height: 150vh;
+    /* max-width: 800px; Increased from 400px to 600px */
+    height: 120vh;
     margin: 15px auto; /* Ensures centering */
     display: block;
     border-radius: 5px;

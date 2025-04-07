@@ -10,7 +10,7 @@ const ITI_college = () => {
     return (
         <div className="iti-container">
             <Navbar />
-            <div> <h1 className='iti-heading'>ITI College</h1></div>
+            <div> <h1 className='iti-heading'>RPR ITI College</h1></div>
             <ITI_poster />
             <ITI_messages/>
             <ITI_details />

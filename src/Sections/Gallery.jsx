@@ -39,6 +39,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
+    <section id="gallery">
     <div className="gallery-section">
       <h2 className="gallery-title">📸 Our Gallery</h2>
       <div className="gallery-container">
@@ -59,6 +60,7 @@ const Gallery = () => {
         </div>
       )}
     </div>
+    </section>
   );
 };
 

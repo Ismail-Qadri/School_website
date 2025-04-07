@@ -13,7 +13,7 @@ function App() {
     <Router>  
       <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/degree-college" element={<DegreeCollege />} />
+      {/* <Route path="/degree-college" element={<DegreeCollege />} /> */}
       <Route path="/iti-college" element={<ITICollege />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>

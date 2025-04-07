@@ -3,7 +3,7 @@ import "../styles/achievements.css";
 import tenthResultImg from "../assets/10result.png";
 import twelfthResultImg from "../assets/12result.png";
 import graduationImg from "../assets/home-poster-1.jpg";
-import sportsImg from "../assets/home-poster-1.jpg"
+import sportsImg from "../assets/Sports-pic.jpeg"
 import extracurricularImg from "../assets/achievement1.png";
 import extracurricularImg2 from '../assets/achievement2.png';
 import graduation_result from "../assets/Graduation_Result.pdf";
@@ -14,6 +14,7 @@ const achievementsData = [
     // content: "Our students achieved a 98% pass percentage with top ranks.", 
     image: tenthResultImg 
   },
+  
   { 
     title: "12th Result", 
     // content: "An outstanding 95% success rate, with many students scoring above 90%.", 
@@ -26,7 +27,7 @@ const achievementsData = [
     showDownload: true
   },
   { 
-    title: "Sports Achievements", 
+    title: "Sports", 
     // content: "Our students won state-level championships in football and athletics.", 
     image: sportsImg 
   },
@@ -47,6 +48,7 @@ const Achievements = () => {
   };
 
   return (
+    <section id="achievements">
     <div className="achievements-container">
       <h2 className="achievements-heading">Our Achievements</h2>
       <div className="accordion">
@@ -94,6 +96,7 @@ const Achievements = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

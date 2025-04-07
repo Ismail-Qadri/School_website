@@ -25,11 +25,11 @@
 
 .contact-one h1,
 .contact-two h1 {
-  margin-bottom: 40px;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .contact-three{
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 @media screen and (min-width: 768px) {

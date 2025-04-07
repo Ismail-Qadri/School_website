@@ -1,5 +1,5 @@
 import React from 'react';
-import home_poster_5 from "../assets/college-poster-7.png";
+import home_poster_5 from "../assets/ITI-poster.jpeg";
 import '../styles/ITI-detail.css'
 
 export const ITI_poster = () => {

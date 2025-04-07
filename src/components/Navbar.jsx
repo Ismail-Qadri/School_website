@@ -36,7 +36,7 @@ const Navbar = () => {
           <h1 className="school-name"><b>RRT EDUCATIONAL GROUP, JOHNIYA, SAHJANWA, GK</b></h1>
           <div className="bulletins">
             <span><i>• Affiliated to UP Board</i></span>
-            <span><i>• Affiliation No - 2131370</i></span>
+            <span><i>• Affiliation No - 751278</i></span>
           </div>
         </div>
 
@@ -55,8 +55,8 @@ const Navbar = () => {
       {/* Bottom Navbar - Scroll Navigation */}
       <nav className="bottom-navbar">
         <ul>
-          <li><button onClick={() => scrollToSection("home")}>Home</button></li>
-          <li><Link to="/degree-college"><button>Degree College</button></Link></li>
+          <li><Link to="/"><button onClick={() => scrollToSection("home")}>Home</button></Link></li>
+          <li><button>Degree College</button></li>
           <li><Link to="/iti-college"><button>ITI College</button></Link></li>
           <li><button onClick={() => scrollToSection("about")}>About Us</button></li>
           <li><button onClick={() => scrollToSection("messages")}>Messages</button></li>
