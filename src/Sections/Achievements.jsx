@@ -84,7 +84,7 @@ const Achievements = () => {
       <a
         href={graduation_result}
         download="Graduation Result.pdf"
-        className="download-button"
+        className="download-button-graduation"
       >
         Download Graduation Result
       </a>

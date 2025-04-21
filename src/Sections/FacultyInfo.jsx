@@ -19,7 +19,7 @@ const FacultyInfo = () => {
       <a
         href={facultyPDF}
         download="Faculty_Details.pdf"
-        className="download-button"
+        className="download-button-faculty"
       >
         📄 Download Full Faculty PDF
       </a>
