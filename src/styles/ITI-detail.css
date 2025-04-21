@@ -131,6 +131,7 @@
   }
   
   @media (max-width: 480px) {
+    
     .institute-header {
       padding: 1.5rem;
     }

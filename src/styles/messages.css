@@ -114,6 +114,7 @@
 @media screen and (max-width: 768px) {
   .msg-container-all {
     width: 90%;
+    margin: 0 auto;
   }
   .message-container-p,
   .message-container-m {
