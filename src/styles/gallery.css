@@ -1,25 +1,3 @@
-/* .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    justify-items: center;
-}
-
-.gallery-image {
-    width: 100%;
-    max-width: 300px; 
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery-image:hover {
-    transform: scale(1.05);
-} */
-
-
-
 /* Gallery Section */
 .gallery-section {
     text-align: center;
@@ -51,7 +29,7 @@
 
 .gallery-image {
     width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
