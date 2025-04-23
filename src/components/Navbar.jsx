@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
 
         <div className="center">
-          <h1 className="school-name"><b>RRT EDUCATIONAL GROUP, JOHNIYA, SAHJANWA, GK</b></h1>
+          <h1 className="school-name"><b>RRT EDUCATIONAL GROUP, JOHNIYA, SAHJANWA, GKP</b></h1>
           <div className="bulletins">
             <span><i>• Affiliated to UP Board</i></span>
             <span><i>• Affiliation No - 751278</i></span>
@@ -62,8 +62,9 @@ const Navbar = () => {
           <li><button onClick={() => scrollToSection("about")}>About Us</button></li>
           <li><button onClick={() => scrollToSection("messages")}>Messages</button></li>
           <li><button onClick={() => scrollToSection("faculties")}>Faculties</button></li>
-          <li><button onClick={() => scrollToSection("gallery")}>Gallery</button></li>
           <li><button onClick={() => scrollToSection("achievements")}>Achievements</button></li>
+          <li><button onClick={() => scrollToSection("gallery")}>Gallery</button></li>
+         
           {/* <li><button onClick={() => scrollToSection("admission")}>Fee Structure</button></li> */}
           <li>
             <button 
